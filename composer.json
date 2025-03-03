@@ -14,7 +14,9 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "jms/serializer": "^3.32",
-        "doctrine/annotations": "^2.0"
+        "jms/serializer": "^3.29.1"
+    },
+    "conflict": {
+        "jms/serializer": ">3.29.1"
     }
 }
