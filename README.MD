@@ -3,6 +3,9 @@
 ## Issue
 Starting from version **3.30.0**, the `doctrine/annotations` dependency was removed from `require` in `composer.json`. This causes issues for projects that rely on it but did not explicitly include it in their own dependencies.
 
+## Bug
+If project doesn't have a `doctrine/annotations` dependency then jms/serializer started from 3.30.0 will not work.
+
 ## Affected Versions
 - ✅ **Works:** `3.29.1`
 - ❌ **Breaks:** `>=3.30.0`
